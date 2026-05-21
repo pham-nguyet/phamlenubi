@@ -1,0 +1,220 @@
+/* Container toàn trang */
+.container{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #fff5f9, #ffeaf3);
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+/* HEADER */
+
+
+.nav ul{
+  display: flex;
+  gap: 25px;
+  padding: 0;
+  margin: 0;
+}
+
+.nav ul li{
+  list-style: none;
+  padding: 8px 14px;
+  cursor: pointer;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.nav ul li:hover{
+  background-color: #ff85a2;
+  color: white;
+}
+
+/* MAIN CONTENT */
+.item2{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  padding: 40px 0;
+}
+
+.mainContent{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  max-width: 1100px;
+}
+
+/* PRODUCT */
+.product{
+  width: 210px;
+  height: 360px;
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  /* 👇 hiệu ứng sang */
+  box-shadow: 0 8px 20px rgba(255, 105, 135, 0.15);
+  transition: all 0.3s ease;
+}
+
+.product:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(255, 105, 135, 0.25);
+}
+
+.mainProduct{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* IMAGE */
+.productImage{
+  width: 100%;
+  height: 150px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* NAME */
+.productName{
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  color: #333;
+}
+
+/* PRICE */
+.productPrice{
+  font-size: 13px;
+  text-align: center;
+}
+
+.price{
+  color: #ff4d6d;
+  font-size: 15px;
+}
+
+.oldPrice{
+  text-decoration: line-through;
+  color: #bbb;
+  margin-left: 5px;
+}
+
+.percent{
+  color: #ff4d6d;
+  margin-left: 5px;
+  font-size: 12px;
+}
+
+/* REMAIN */
+.productRemain{
+  background: #ffe0ea;
+  border-radius: 20px;
+  text-align: center;
+  font-size: 12px;
+  padding: 4px;
+  color: #555;
+}
+
+/* BUTTON */
+.buyButton{
+  background: linear-gradient(135deg, #ff85a2, #ff5c8a);
+  color: white;
+  text-align: center;
+  padding: 6px 0;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.buyButton:hover{
+  background: linear-gradient(135deg, #ff5c8a, #ff3366);
+  transform: scale(1.05);
+}
+
+/* FOOTER */
+.item3 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #f8f8f8;
+  padding: 40px 0;
+}
+
+.footer {
+  width: 1100px; /* cùng width với mainContent */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 13px;
+  color: #333;
+}
+
+.footerSection {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footerSection div {
+  flex: 1;
+  min-width: 200px; /* để khi màn hình nhỏ, tự wrap */
+}
+
+.footerSection strong {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #000;
+}
+
+.footerSection ul {
+  padding: 0;
+}
+
+.footerSection ul li {
+  list-style: none;
+  padding: 4px 0;
+  cursor: pointer;
+}
+
+.footerSection ul li:hover {
+  text-decoration: underline;
+}
+
+.website {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 8px;
+}
+
+.website i {
+  width: 80px;
+  height: 24px;
+  display: block;
+  background-size: 250px 200px;
+}
+
+.tgdd { background-position: 0 0; background-image: url('/Logo-webmoi-min.png'); }
+.topzone { background-position: 0 -58px; background-image: url('/Logo-webmoi-min.png'); }
+.bhx { background-position: -170px 0; background-image: url('/Logo-webmoi-min.png'); }
+.ankhang { background-position: -85px -90px; background-image: url('/Logo-webmoi-min.png'); }
+
+.copyright {
+  font-size: 12px;
+  color: #555;
+  border-top: 1px solid #ddd;
+  padding-top: 10px;
+  line-height: 1.5;
+}

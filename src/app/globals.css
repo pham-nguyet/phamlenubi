@@ -1,0 +1,55 @@
+.page{
+  background:#ffd6e7;
+  min-height:100vh;
+  font-family:Arial, sans-serif;
+}
+
+/* Banner */
+.banner{
+  width:100%;
+  text-align:center;
+}
+
+/* Mô tả cửa hàng */
+.desc{
+  background:#ff4d94;
+  color:white;
+  text-align:center;
+  padding:20px;
+}
+
+/* Tiêu đề */
+.title{
+  text-align:center;
+  margin:30px;
+  color:#ff4d94;
+}
+
+/* Grid sản phẩm */
+.products{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:20px;
+  padding:20px;
+}
+
+/* Card bánh */
+.card{
+  background:white;
+  border-radius:10px;
+  padding:15px;
+  text-align:center;
+  box-shadow:0 4px 10px rgba(0,0,0,0.1);
+  transition:0.3s;
+}
+
+/* Hover */
+.card:hover{
+  transform:scale(1.05);
+}
+
+/* Giá */
+.price{
+  color:#ff4d94;
+  font-weight:bold;
+}
